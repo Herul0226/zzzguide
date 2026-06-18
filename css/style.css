@@ -259,3 +259,35 @@ footer {
     color: var(--text-gray);
     font-size: 12px;
 }
+
+/* Tampilan Desktop */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+}
+
+/* Tampilan Tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
